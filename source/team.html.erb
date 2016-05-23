@@ -1,10 +1,12 @@
 
+<% members = %w(alexis Ben julius Gabriel marine ) %>
+
 <div class="padded text-center">
-  <h1>The Team</h1>
+  <h1>The Team</h1> <br>
     <ul class="list-inline text-center">
-      <% ["romain", "seb", "anne"].each do |member| %>
+      <% members.each do |member| %>
         <li>
-          <%= image_tag "#{member}.jpg", class: "avatar-xlarge" %>
+          <%= image_tag "#{member}.jpeg", class: "avatar-xlarge" %>
           <h3><%= member.capitalize %></h3>
         </li>
       <% end %>
